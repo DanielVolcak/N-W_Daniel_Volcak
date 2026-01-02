@@ -49,3 +49,25 @@ Programa PRIVALO sugeneruoti:
 Programa NETURI atlikti lokalaus išlygiavimo (Smith–Waterman) ar kelių
 sekų išlygiavimo.
 
+
+ĮVESTIES FORMATAS
+=================
+Programa PRIVALO priimti įvestį FASTA formatu.
+
+Kiekvienas FASTA įrašas PRIVALO prasidėti antraštės eilute, prasidedančia
+simboliu '>'.
+
+Sekos simboliai PRIVALO būti pateikti sekančiose eilutėse ir GALI būti
+išskaidyti per kelias eilutes. Tarpai ir tuščios eilutės TURĖTŲ būti
+ignoruojami.
+
+Programa PRIVALO naudoti tik pirmą FASTA įrašą kiekviename įvesties
+šaltinyje. Papildomi FASTA įrašai TURĖTŲ būti ignoruojami, apie tai
+pranešant kaip WARNING arba NOTE.
+
+Leistini simboliai (minimalus palaikymas):
+- DNR/RNR: A, C, G, T, U
+- Baltymai: 20 standartinių aminorūgščių raidžių
+
+Kiti simboliai PRIVALO būti traktuojami kaip klaida.
+
