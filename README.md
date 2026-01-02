@@ -8,5 +8,5 @@ CLI programos specifikacija pagal VU Bioinformatikos kurso projekto gaires.
 
 Failai:
 - docs/SPEC_NW_LT.txt – specifikacija
-- report/report.pdf – galutinė ataskaita (jei pateikiama)
+- docs/Ataskaita.pdf – galutinė ataskaita 
 
