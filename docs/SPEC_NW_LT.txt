@@ -71,3 +71,33 @@ Leistini simboliai (minimalus palaikymas):
 
 Kiti simboliai PRIVALO būti traktuojami kaip klaida.
 
+
+ALGORITMO APRAŠYMAS
+===================
+Programa PRIVALO naudoti Needleman–Wunsch dinaminio programavimo
+algoritmą globaliam sekų išlygiavimui.
+
+Tegu A = a1..am ir B = b1..bn – dvi įvesties sekos.
+
+Programa PRIVALO sukurti (m+1) × (n+1) dydžio balų matricą F, kur:
+
+F(0,0) = 0
+F(i,0) = i × gap
+F(0,j) = j × gap
+
+Vidinės matricos reikšmės PRIVALO būti skaičiuojamos pagal formulę:
+
+F(i,j) = max(
+  F(i−1,j−1) + s(ai,bj),
+  F(i−1,j)   + gap,
+  F(i,j−1)   + gap
+)
+
+Kur:
+- s(ai,bj) – simbolių sutapimo / nesutapimo balas,
+- gap – tarpo (gap) bauda.
+
+Programa PRIVALO atlikti atsekimą (traceback) nuo F(m,n) iki F(0,0),
+sugeneruojant dvi išlygiuotas sekas A' ir B' su tarpais '-' taip, kad
+A' ir B' ilgis sutaptų.
+
