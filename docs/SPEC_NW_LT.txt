@@ -124,3 +124,22 @@ Length: 9
 A: ACGTACGT-
 B: ACGT-CGTG
 
+
+NEPRIVALOMI ARGUMENTAI (OPTIONS)
+================================
+Programa PRIVALO palaikyti šias opcijas:
+
+--help
+  Išveda trumpą naudojimo informaciją į STDOUT ir baigia darbą.
+
+--version
+  Išveda programos versiją į STDOUT ir baigia darbą.
+
+Programa GALI palaikyti papildomas opcijas balų schemai keisti:
+--match INT       (default: 1)
+--mismatch INT    (default: -1)
+--gap INT         (default: -1)
+
+Jei opcijos nerealizuojamos, tai PRIVALO būti aiškiai nurodyta README ir
+šiame dokumente.
+
