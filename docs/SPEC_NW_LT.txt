@@ -31,3 +31,21 @@ Visi klaidų pranešimai PRIVALO būti rašomi į STDERR.
 
 Programa NETURI daryti prielaidos, kad STDIN yra pervyniojamas (rewindable).
 
+
+PROGRAMOS FUNKCIJA
+==================
+Programa PRIVALO atlikti dviejų biologinių sekų globalų porinį
+išlygiavimą, naudodama Needleman–Wunsch algoritmą.
+
+Programa PRIVALO apskaičiuoti optimalų globalų išlygiavimą tarp dviejų
+sekų, maksimalizuodama išlygiavimo balą pagal nurodytą balų (scoring)
+schemą.
+
+Programa PRIVALO sugeneruoti:
+- galutinį išlygiavimo balą (score),
+- dvi išlygiuotas sekas su tarpais ('-'),
+- išlygiavimo ilgį.
+
+Programa NETURI atlikti lokalaus išlygiavimo (Smith–Waterman) ar kelių
+sekų išlygiavimo.
+
