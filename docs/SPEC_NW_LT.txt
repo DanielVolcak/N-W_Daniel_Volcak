@@ -142,4 +142,37 @@ Programa GALI palaikyti papildomas opcijas balų schemai keisti:
 
 Jei opcijos nerealizuojamos, tai PRIVALO būti aiškiai nurodyta README ir
 šiame dokumente.
+KLAIDŲ DIAGNOSTIKA
+=================
+Visi klaidų pranešimai PRIVALO būti rašomi į STDERR.
+
+Klaidų pranešimai TURĖTŲ turėti:
+- programos pavadinimą,
+- apdorojamo failo vardą arba STDIN,
+- trumpą klaidos aprašymą.
+
+Programa PRIVALO aptikti bent šias klaidas:
+- neteisingas FASTA formatas,
+- tuščia įvestis / nėra FASTA įrašo,
+- neleistini simboliai sekoje,
+- neįmanoma atidaryti įvesties failo,
+- neteisingi opcijų argumentai (jei opcijos palaikomos).
+
+PABAIGOS KODAI (EXIT STATUS)
+============================
+Programa PRIVALO grąžinti šiuos pabaigos kodus:
+0 – sėkmingas vykdymas
+1 – įvesties / formato klaida
+2 – I/O klaida
+3 – vidinė programos klaida
+
+APLINKOS KINTAMIEJAI
+====================
+Programa NETURI priklausyti nuo jokių aplinkos kintamųjų.
+Jei programa naudoja laikinus failus, ji GALI naudoti TMPDIR.
+
+NUORODOS
+========
+1. S. Bradner, RFC 2119 – Key words for use in RFCs to Indicate Requirement Levels
+   https://www.rfc-editor.org/rfc/rfc2119
 
