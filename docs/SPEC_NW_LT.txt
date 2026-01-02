@@ -1,0 +1,21 @@
+
+PROGRAMOS IŠKVIETIMAS
+=====================
+Programa PRIVALO priimti du įvesties šaltinius: FASTA_FAILAS_1 ir FASTA_FAILAS_2.
+
+Jei įvesties failo vardas yra vienas brūkšnelis ('-'), programa PRIVALO skaityti
+atitinkamą seką iš STDIN.
+
+Jei įvesties failų vardai nenurodyti, programa PRIVALO skaityti abi sekas iš STDIN.
+
+Pavyzdžiai:
+-----------
+1) Dviejų failų palyginimas:
+   nw-align seqA.fasta seqB.fasta
+
+2) Antros sekos skaitymas iš STDIN:
+   nw-align seqA.fasta - < seqB.fasta
+
+3) Abiejų sekų skaitymas iš STDIN:
+   nw-align - - < input.fasta
+
