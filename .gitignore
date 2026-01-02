@@ -1,3 +1,6 @@
+# Microsoft Word temporary / lock files
+~$*.docx
+
 .DS_Store
 .idea/
 .vscode/
