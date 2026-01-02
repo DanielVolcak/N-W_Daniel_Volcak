@@ -1,0 +1,39 @@
+TERMINŲ ŽODYNAS
+==============
+
+FASTA
+  Tekstinis biologinių sekų formatas, kuriame sekos aprašas prasideda
+  antraštės eilute su simboliu '>', o pati seka pateikiama sekančiose
+  eilutėse.
+
+STDIN
+  Standartinė įvestis (standard input), iš kurios programa skaito duomenis,
+  kai įvesties failo vardas nenurodytas arba nurodytas kaip '-'.
+
+STDOUT
+  Standartinė išvestis (standard output), į kurią programa rašo savo
+  rezultatus.
+
+STDERR
+  Standartinė klaidų išvestis (standard error), į kurią programa rašo
+  klaidų ir diagnostinius pranešimus.
+
+Globalus išlygiavimas
+  Sekų išlygiavimo tipas, kuriame abi sekos išlygiuojamos per visą savo
+  ilgį, leidžiant tarpų ('-') įterpimą.
+
+Needleman–Wunsch algoritmas
+  Dinaminio programavimo algoritmas, skirtas dviejų sekų globaliam
+  poriniam išlygiavimui.
+
+Gap (tarpas)
+  Simbolis '-' išlygiavime, žymintis įterptą tarpą vienoje iš sekų.
+
+Gap bauda
+  Neigiamas balas, priskiriamas tarScore (balas)
+  Skaitinė reikšmė, apibūdinanti išlygiavimo kokybę pagal pasirinktą
+  balų skaičiavimo schemą.
+
+Traceback (atsekimas)
+  Procesas, kuriuo iš dinaminio programavimo matricos atkuriamas
+  optimalus sekų išlygiavimas.
