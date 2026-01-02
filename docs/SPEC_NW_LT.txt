@@ -19,3 +19,15 @@ Pavyzdžiai:
 3) Abiejų sekų skaitymas iš STDIN:
    nw-align - - < input.fasta
 
+
+STDIN / STDOUT / STDERR ELGSENA
+==============================
+Jei įvesties failų vardai komandinėje eilutėje nenurodyti, programa PRIVALO
+skaityti įvestį iš STDIN.
+
+Programa PRIVALO rašyti visus rezultatus į STDOUT.
+
+Visi klaidų pranešimai PRIVALO būti rašomi į STDERR.
+
+Programa NETURI daryti prielaidos, kad STDIN yra pervyniojamas (rewindable).
+
