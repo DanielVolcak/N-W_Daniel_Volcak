@@ -101,3 +101,26 @@ Programa PRIVALO atlikti atsekimą (traceback) nuo F(m,n) iki F(0,0),
 sugeneruojant dvi išlygiuotas sekas A' ir B' su tarpais '-' taip, kad
 A' ir B' ilgis sutaptų.
 
+
+IŠVESTIES FORMATAS
+==================
+Programa PRIVALO rašyti rezultatus į STDOUT paprasto teksto formatu.
+
+Išvestis PRIVALO turėti:
+- galutinį išlygiavimo balą (Score),
+- išlygiavimo ilgį (Length),
+- dvi išlygiuotas sekas.
+
+Rekomenduojamas minimalus formatas:
+Score: <int>
+Length: <int>
+A: <aligned_A>
+B: <aligned_B>
+
+Pavyzdys:
+---------
+Score: 10
+Length: 9
+A: ACGTACGT-
+B: ACGT-CGTG
+
